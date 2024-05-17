@@ -1,3 +1,12 @@
+<?php
+ include("../../model/MySQL.php");
+ $conexion = new MySQL();
+ $pdo = $conexion->conectar();
+ $sql = "SELECT * FROM area_tallerobras WHERE estado=0";
+ $stmt = $pdo->prepare($sql);
+ $stmt->execute();
+ $fila = $stmt->fetchAll(PDO::FETCH_ASSOC);
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -258,9 +267,12 @@
                                             </tr>
                                         </thead>
                                         <tbody style="text-align: center;">
+                                            <?php
+                                            foreach ($fila as $key ) {
+                                            ?>
                                             <tr>
-                                                <td>1</td>
-                                                <td>TALLER</td>
+                                                <td><?php echo $key['idArea_TallerObras'] ?></td>
+                                                <td><?php echo $key['nombre'] ?></td>
                                                 <td>
                                                     <button style="color: white;" type="button" class="btn btn-danger">
                                                         <i class="mdi mdi-delete"></i>
@@ -270,7 +282,9 @@
                                                     </button>
                                                 </td>
                                             </tr>
-
+                                            <?php
+                                            }
+                                            ?>
                                         </tbody>
                                     </table>
                                 </div>

@@ -55,7 +55,7 @@
                             </li>
                         </ul>
                         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                            <h1 style="font-weight: bold; color: #ffff">Prestamos</h1>
+                            <h1 style="font-weight: bold; color: #ffff">Motores</h1>
                         </div>
                         <ul class="navbar-nav navbar-nav-right">
                             <li class="nav-item nav-profile dropdown">
@@ -217,7 +217,7 @@
                     <div class="col-md-12 grid-margin stretch-card">
                         <button type="button" style="background-color: #0d6efd; color: white; " class="btn mt-2 mb-2 "
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Prestar Elemento
+                            Agregar Salida
                         </button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
@@ -235,33 +235,43 @@
                                         <form class="forms-sample">
                                             <div class="form-group row">
                                                 <label style="color: black;" for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Fecha
-                                                    y Hora:</label>
+                                                    class="col-sm-3 col-form-label">Nombre:</label>
                                                 <div class="col-sm-9">
-                                                    <input type="datetime-local" name="" id="" class="form-control"
-                                                        required>
+                                                    <input type="text" name="" id="" class="form-control" required>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label style="color: black;" for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Producto:</label>
+                                                    class="col-sm-3 col-form-label">Destino:</label>
                                                 <div class="col-sm-9">
                                                     <div id="the-basics">
-                                                        <input class="typeahead" type="text"
+                                                        <input class="form-control" type="text"
                                                             style="margin-right: 200rem;" required />
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label style="color: black;" for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Cantidad:</label>
+                                                    class="col-sm-3 col-form-label">Fecha y Hora de Salida:</label>
                                                 <div class="col-sm-9">
-                                                    <input class="form-control" type="number" min="1" required />
+                                                    <input class="form-control" type="datetime-local" required />
                                                 </div>
                                             </div>
                                             <div class="form-group row">
                                                 <label style="color: black;" for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Recibio:</label>
+                                                    class="col-sm-3 col-form-label">Concepto:</label>
+                                                <div class="col-sm-9">
+                                                    <div id="the-basics">
+                                                        <textarea class="form-control" name="" id="">
+
+                                                        </textarea>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group row">
+                                                <label style="color: black;" for="exampleInputUsername2"
+                                                    class="col-sm-3 col-form-label">Autorizo:</label>
                                                 <div class="col-sm-9">
                                                     <div id="the-basics">
                                                         <input class="typeahead" style="margin-right: 200rem;"
@@ -269,17 +279,10 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="form-group row">
-                                                <label style="color: black;" for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Entrego:</label>
-                                                <div class="col-sm-9">
-                                                    <div id="the-basics">
-                                                        <input class="typeahead" style="margin-right: 200rem;"
-                                                            type="text" required />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary me-2 mt-5">Guardar</button>
+                                            <h1 style="text-align: center;">
+                                                <button type="submit" class="btn btn-primary me-2 mt-2">Guardar</button>
+                                            </h1>
+
                                         </form>
                                     </div>
 
@@ -290,51 +293,111 @@
                     <div class="col-md-12 grid-margin stretch-card">
                         <div class="card">
                             <div class="card-body">
-                                <div class="table-responsive" style="width:98%; margin: 0 auto;">
-                                    <table id="example" class="table table-hover" style="text-align: center;">
-                                        <thead style="background-color: #0d6efd; color: white;">
-                                            <tr style="text-align: center;">
-                                                <th style="text-align: center;">FECHA Y HORA</th>
-                                                <th style="text-align: center;">PRODUCTO</th>
-                                                <th style="text-align: center;">CANTIDAD</th>
-                                                <th style="text-align: center;">RECIBIO</th>
-                                                <th style="text-align: center;">ENTREGO</th>
-                                                <th style="text-align: center;">ESTADO</th>
-                                                <th style="text-align: center;">ACCIONES</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>24/04/2024</td>
-                                                <td>MARTILLO</td>
-                                                <td>1</td>
-                                                <td>VIGILANTE</td>
-                                                <td>LEIDY</td>
-                                                <td>PRESTADO</td>
-                                                <td>
+                                <div class="row">
+                                    <div class="col-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title p-2" style="margin-bottom: 0; text-align:center;">
+                                                    Detalles de Salida - Entrada
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Motor:</strong></p>
+                                                        <p id="motor-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Destino:</strong></p>
+                                                        <p id="destino-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Fecha de Salida:</strong></p>
+                                                        <p id="fecha-salida-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Concepto:</strong></p>
+                                                        <p id="concepto-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Fecha de Entrega:</strong></p>
+                                                        <p id="fecha-entrega-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Autoriza:</strong></p>
+                                                        <p id="autoriza-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Estado:</strong></p>
+                                                        <p id="estado-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <button type="button"
+                                                            style="background-color: #ee5b5b; color:white"
+                                                            class=" btn btn-danger" id="btn-cancelar">Cancelar</button>
+                                                        <button type="button" class="btn btn-success"
+                                                            style="color:white" id="btn-entregar">Entrega</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                                    <button type="button" style="color:white" class="btn btn-success"><i
-                                                            class="mdi mdi-checkbox-marked"></i></button>
-                                                    <button style="background-color: #ee5b5b; color:white" type="button"
-                                                        class=" btn btn-danger"><i class="mdi mdi-close"></i></button>
-                                                </td>
+                                    </div>
+                                    <div class="col-6 mt-3">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h4 class="card-title p-2" style="margin-bottom: 0; text-align:center;">
+                                                    Detalles de Salida - Entrada
+                                                </h4>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Motor:</strong></p>
+                                                        <p id="motor-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Destino:</strong></p>
+                                                        <p id="destino-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Fecha de Salida:</strong></p>
+                                                        <p id="fecha-salida-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Concepto:</strong></p>
+                                                        <p id="concepto-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Fecha de Entrega:</strong></p>
+                                                        <p id="fecha-entrega-data"></p>
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Autoriza:</strong></p>
+                                                        <p id="autoriza-data"></p>
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-sm-6">
+                                                        <p class="mb-2"><strong>Estado:</strong></p>
+                                                        <p id="estado-data"></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                                            </tr>
-                                            <tr>
-                                                <td>23/04/2024</td>
-                                                <td>MARTILLO</td>
-                                                <td>1</td>
-                                                <td>VIGILANTE</td>
-                                                <td>LEIDY</td>
-                                                <td>DEVUELTO</td>
-                                                <td>
-                                                </td>
+                                    </div>
 
-                                            </tr>
-
-                                        </tbody>
-
-                                    </table>
                                 </div>
                             </div>
                         </div>
