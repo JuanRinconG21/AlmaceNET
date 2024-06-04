@@ -43,26 +43,21 @@
                     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
                         <ul class="navbar-nav navbar-nav-left">
                             <li class="nav-item ms-0 me-5 d-lg-flex d-none">
-
                             </li>
                             <li class="nav-item dropdown">
                                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                     aria-labelledby="notificationDropdown">
-
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-
                             </li>
                             <li class="nav-item dropdown">
-
                             </li>
                             <li class="nav-item nav-search d-none d-lg-block ms-3">
-
                             </li>
                         </ul>
                         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                            <h1 style="font-weight: bold; color: #ffff">Areas Taller y Obras Civiles</h1>
+                            <h1 style="font-weight: bold; color: #ffff">Areas Generales</h1>
                         </div>
                         <ul class="navbar-nav navbar-nav-right">
                             <li class="nav-item nav-profile dropdown">
@@ -118,7 +113,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="../personal/general.php" class="nav-link">
                                 <i class="mdi mdi-worker menu-icon"></i>
                                 <span class="menu-title">Personal</span>
                                 <i class="menu-arrow"></i>
@@ -126,40 +121,42 @@
                             <div class="submenu">
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#Generales">General</a>
+                                        <a class="nav-link" href="../personal/general.php">General</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#TalleryObrasCiviles">Taller y Obras Civiles</a>
+                                        <a class="nav-link" href="../personal/talleryobras.php">Taller y Obras
+                                            Civiles</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Retro y Kiosco
+                                        <a class="nav-link" href="../personal/retroykiosco.php">Retro y Kiosco
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Patios </a>
+                                        <a class="nav-link" href="../personal/patios.php">Patios </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="../entregas/proteccion.php" class="nav-link">
                                 <i class="mdi mdi-truck-delivery menu-icon"></i>
-                                <span class="menu-title">Entrega de Elementos</span>
+                                <span class="menu-title">Entrega</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="submenu">
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#Generales">Protección</a>
+                                        <a class="nav-link" href="../entregas/proteccion.php">Protección</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#TalleryObrasCiviles">Taller y Obras Civiles</a>
+                                        <a class="nav-link" href="../entregas/talleryobras.php">Taller y Obras
+                                            Civiles</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Kiosco y Retro</a>
+                                        <a class="nav-link" href="../entregas/kioscoyretro.php">Kiosco y Retro</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Patios </a>
+                                        <a class="nav-link" href="../entregas/patios.php">Patios </a>
                                     </li>
                                 </ul>
                             </div>
@@ -172,7 +169,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="../bitacoras/bitacoras.php" class="nav-link">
                                 <i class="mdi mdi-file-document menu-icon"></i>
                                 <span class="menu-title">Bitácoras</span>
                                 <i class="menu-arrow"></i>
@@ -180,22 +177,23 @@
                             <div class="submenu">
                                 <ul class="submenu-item">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login.html">Administración de Maquinaria
+                                        <a class="nav-link" href="../bitacoras/maquinaria-equipo.php">Administración de
+                                            Maquinaria
                                             o Zona</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login-2.html">Bitácoras</a>
+                                        <a class="nav-link" href="../bitacoras/bitacoras.php">Bitácoras</a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="docs/documentation.html" class="nav-link">
+                            <a href="../motores.php" class="nav-link">
                                 <i class="mdi mdi-oil menu-icon"></i>
                                 <span class="menu-title">Motores</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="../gastos/gastos.php" class="nav-link">
                                 <i class="mdi mdi-currency-usd menu-icon"></i>
                                 <span class="menu-title">Gastos</span>
                                 <i class="menu-arrow"></i>
@@ -203,10 +201,10 @@
                             <div class="submenu">
                                 <ul class="submenu-item">
                                     <li style="color: #a54f03;" class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login.html">Proveedores</a>
+                                        <a class="nav-link" href="../gastos/proveedores.php">Proveedores</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login-2.html">Gastos</a>
+                                        <a class="nav-link" href="../gastos/gastos.php">Gastos</a>
                                     </li>
                                 </ul>
                             </div>

@@ -103,7 +103,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./personal/general.php" class="nav-link">
                                 <i class="mdi mdi-worker menu-icon"></i>
                                 <span class="menu-title">Personal</span>
                                 <i class="menu-arrow"></i>
@@ -111,40 +111,42 @@
                             <div class="submenu">
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#Generales">General</a>
+                                        <a class="nav-link" href="./personal/general.php">General</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#TalleryObrasCiviles">Taller y Obras Civiles</a>
+                                        <a class="nav-link" href="./personal/talleryobras.php">Taller y Obras
+                                            Civiles</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Retro y Kiosco
+                                        <a class="nav-link" href="./personal/retroykiosco.php">Retro y Kiosco
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Patios </a>
+                                        <a class="nav-link" href="./personal/patios.php">Patios </a>
                                     </li>
                                 </ul>
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./entregas/proteccion.php" class="nav-link">
                                 <i class="mdi mdi-truck-delivery menu-icon"></i>
-                                <span class="menu-title">Entrega de Elementos</span>
+                                <span class="menu-title">Entregas</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="submenu">
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#Generales">Protección</a>
+                                        <a class="nav-link" href="./entregas/proteccion.php">Protección</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#TalleryObrasCiviles">Taller y Obras Civiles</a>
+                                        <a class="nav-link" href="./entregas/talleryobras.php">Taller y Obras
+                                            Civiles</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Kiosco y Retro</a>
+                                        <a class="nav-link" href="./entregas/kioscoyretro.php">Kiosco y Retro</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#RetroyKiosco">Patios </a>
+                                        <a class="nav-link" href="./entregas/patios.php">Patios </a>
                                     </li>
                                 </ul>
                             </div>
@@ -157,7 +159,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./bitacoras/maquinaria-equipo.php" class="nav-link">
+                            <a href="./bitacoras/bitacoras.php" class="nav-link">
                                 <i class="mdi mdi-file-document menu-icon"></i>
                                 <span class="menu-title">Bitácoras</span>
                                 <i class="menu-arrow"></i>
@@ -176,12 +178,12 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="docs/documentation.html" class="nav-link">
+                            <a href="./motores.php" class="nav-link">
                                 <i class="mdi mdi-oil menu-icon"></i>
                                 <span class="menu-title">Motores</span></a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a href="./gastos/gastos.php" class="nav-link">
                                 <i class="mdi mdi-currency-usd menu-icon"></i>
                                 <span class="menu-title">Gastos</span>
                                 <i class="menu-arrow"></i>
@@ -189,10 +191,10 @@
                             <div class="submenu">
                                 <ul class="submenu-item">
                                     <li style="color: #a54f03;" class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login.html">Proveedores</a>
+                                        <a class="nav-link" href="./gastos/proveedores.php">Proveedores</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="pages/samples/login-2.html">Gastos</a>
+                                        <a class="nav-link" href="./gastos/gastos.php">Gastos</a>
                                     </li>
                                 </ul>
                             </div>

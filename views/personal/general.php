@@ -2,12 +2,11 @@
  include("../../model/MySQL.php");
  $conexion = new MySQL();
  $pdo = $conexion->conectar();
- $sql = "SELECT * FROM maquinaria_zona WHERE estado=0";
+ $sql = "SELECT * FROM area_trabajo WHERE estado=0";
  $stmt = $pdo->prepare($sql);
  $stmt->execute();
  $fila = $stmt->fetchAll(PDO::FETCH_ASSOC);
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,21 +43,26 @@
                     <div class="navbar-menu-wrapper d-flex align-items-center justify-content-between">
                         <ul class="navbar-nav navbar-nav-left">
                             <li class="nav-item ms-0 me-5 d-lg-flex d-none">
+
                             </li>
                             <li class="nav-item dropdown">
                                 <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list"
                                     aria-labelledby="notificationDropdown">
+
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
+
                             </li>
                             <li class="nav-item dropdown">
+
                             </li>
                             <li class="nav-item nav-search d-none d-lg-block ms-3">
+
                             </li>
                         </ul>
                         <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-                            <h1 style="font-weight: bold; color: #ffff">Areas Generales</h1>
+                            <h1 style="font-weight: bold; color: #ffff">Inicio</h1>
                         </div>
                         <ul class="navbar-nav navbar-nav-right">
                             <li class="nav-item nav-profile dropdown">
@@ -115,7 +119,7 @@
                             </div>
                         </li>
                         <li class="nav-item">
-                            <a href="../personal/general.php" class="nav-link">
+                            <a href="./general.php" class="nav-link active">
                                 <i class="mdi mdi-worker menu-icon"></i>
                                 <span class="menu-title">Personal</span>
                                 <i class="menu-arrow"></i>
@@ -123,18 +127,18 @@
                             <div class="submenu">
                                 <ul>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../personal/general.php">General</a>
+                                        <a class="nav-link" href="./general.php">General</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../personal/talleryobras.php">Taller y Obras
+                                        <a class="nav-link" href="./talleryobras.php">Taller y Obras
                                             Civiles</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../personal/retroykiosco.php">Retro y Kiosco
+                                        <a class="nav-link" href="./retroykiosco.php">Retro y Kiosco
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="../personal/patios.php">Patios </a>
+                                        <a class="nav-link" href="./patios.php">Patios </a>
                                     </li>
                                 </ul>
                             </div>
@@ -142,7 +146,7 @@
                         <li class="nav-item">
                             <a href="../entregas/proteccion.php" class="nav-link">
                                 <i class="mdi mdi-truck-delivery menu-icon"></i>
-                                <span class="menu-title">Entrega</span>
+                                <span class="menu-title">Entregas</span>
                                 <i class="menu-arrow"></i>
                             </a>
                             <div class="submenu">
@@ -171,7 +175,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="./bitacoras.php" class="nav-link">
+                            <a href="../bitacoras/bitacoras.php" class="nav-link">
                                 <i class="mdi mdi-file-document menu-icon"></i>
                                 <span class="menu-title">Bitácoras</span>
                                 <i class="menu-arrow"></i>
@@ -179,12 +183,12 @@
                             <div class="submenu">
                                 <ul class="submenu-item">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./maquinaria-equipo.php">Administración de
+                                        <a class="nav-link" href="../bitacoras/maquinaria-equipo.php">Administración de
                                             Maquinaria
                                             o Zona</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="./bitacoras.php">Bitácoras</a>
+                                        <a class="nav-link" href="../bitacoras/bitacoras.php">Bitácoras</a>
                                     </li>
                                 </ul>
                             </div>
@@ -222,29 +226,28 @@
                     <div class="col-md-12 grid-margin stretch-card">
                         <button type="button" style="background-color: #0d6efd; color: white; " class="btn mt-2 mb-2 "
                             data-bs-toggle="modal" data-bs-target="#exampleModal">
-                            Agregar
+                            Agregar Área
                         </button>
                         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
                             aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content">
                                     <div class="modal-header" style="background-color: #0d6efd; color: #ffff">
-                                        <h5 class="modal-title" id="exampleModalLabel">Agregar Maquinaria o Zona</h5>
+                                        <h5 class="modal-title" id="exampleModalLabel">Agregar Área</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"
                                             aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
                                         <p class="card-description">
-                                            Ingresa la Maquinaria o Zona que quieres agregar, ejemplo:
-                                            Retroexcavadora,Hornos, etc.
+                                            Ingresa el Area que quieres agregar, ejemplo: Patios,PPC, etc.
                                         </p>
                                         <form class="forms-sample">
                                             <div class="form-group row">
                                                 <label for="exampleInputUsername2"
-                                                    class="col-sm-3 col-form-label">Maquinaria o Zona</label>
+                                                    class="col-sm-3 col-form-label">Area</label>
                                                 <div class="col-sm-9">
                                                     <input type="text" class="form-control" id="exampleInputUsername2"
-                                                        placeholder="Ejemplo: Retroexcavadora, Hornos, Cargador">
+                                                        placeholder="Ejemplo: PPC, Hornos, Camaras">
                                                 </div>
                                             </div>
                                             <button type="submit" class="btn btn-primary me-2">Guardar</button>
@@ -263,17 +266,17 @@
                                         <thead style="background-color: #0d6efd; color: white;">
                                             <tr style="text-align: center;">
                                                 <th style="text-align: center;">IDENTIFICADOR</th>
-                                                <th style="text-align: center;">MAQUINA O ZONO</th>
+                                                <th style="text-align: center;">AREA</th>
                                                 <th style="text-align: center;">ACCIONES</th>
                                             </tr>
                                         </thead>
-                                        <tbody style="text-align: center;"> ?
+                                        <tbody style="text-align: center;">
                                             <?php
                                             foreach ($fila as $key ) {
                                             ?>
                                             <tr>
-                                                <td><?php echo $key['idMaquinaria_Zona'] ?></td>
-                                                <td><?php echo $key['nombreoZona'] ?></td>
+                                                <td><?php echo $key['idArea_Trabajo'] ?></td>
+                                                <td><?php echo $key['nombre'] ?></td>
                                                 <td>
                                                     <button style="color: white;" type="button" class="btn btn-danger">
                                                         <i class="mdi mdi-delete"></i>
@@ -286,6 +289,8 @@
                                             <?php
                                             }
                                             ?>
+
+
                                         </tbody>
                                     </table>
                                 </div>
